@@ -1,0 +1,11 @@
+/**Favorite_Book List;
+Mercy Thompson Series (1,9)
+Stephan King (2,5)
+Harry Potter (3,7.5)
+**/
+
+CREATE TABLE Favorite_Book (id INTEGER, name TEXT, rating INTEGER);
+
+INSERT INTO Favorite_Book VALUES (1,"Mercy Thompson",9);
+INSERT INTO Favorite_Book VALUES (2,"Stephan King", 5);
+INSERT INTO Favorite_Book VALUES (3, "Harry Potter", 7.5);
