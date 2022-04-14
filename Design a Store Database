@@ -1,0 +1,43 @@
+/**Clothing Boutique:
+Sun Dress (24 ,8 ,3 ,2 ,6)
+Winter Leggings (13 ,12 ,5 ,4 ,7)
+White Sandals (22 ,5 ,2 ,2 , 9)
+Brown Boots (34 ,4 ,6 ,2 ,8)
+Skinny Jeans (40 ,10 ,8 ,3 ,7)
+Straight Jeans (40 ,11 ,7 ,3 ,7)
+Boy Friend Jeans (38 ,10 ,9 ,2 ,8)
+Purple Tanktop (12 ,20 ,12 ,4 ,10)
+Grey Cardigan (28 ,4 ,2 ,1 ,6)
+Headbands (10 ,16 ,8 ,2 ,6)
+Baby Doll Tee (11 ,17 ,13 ,4 ,10)
+Socks (6 ,20 ,18 ,4 ,6)
+Maxi Dress (30 ,6 ,2 ,2 ,6) 
+Button Up Top (24 ,5 ,2 ,2 ,4)
+Beanie (15 ,3 ,4 ,1 ,5)
+**/
+
+CREATE TABLE ClothingBoutique(id INTEGER PRIMARY KEY, name TEXT, price INTEGER, in_stock INTEGER, purchased INTEGER, restocked INTEGER, rating INTEGER);
+
+INSERT INTO ClothingBoutique VALUES(1, "Sun Dress",24,8,3,2,6);
+INSERT INTO ClothingBoutique VALUES(2, "Winter Leggings",13,12,5,4,7);
+INSERT INTO ClothingBoutique VALUES(3,"White Sandals",22,5,2,2,9);
+INSERT INTO ClothingBoutique VALUES(4, "Brown Boots",34,4,6,2,8);
+INSERT INTO ClothingBoutique VALUES(5, "Skinny Jeans",40,10,8,3,7);
+INSERT INTO ClothingBoutique VALUES(6, "Straight Jeans",40,11,7,3,7);
+INSERT INTO ClothingBoutique VALUES(7,"Boy Friend Jeans",38,10,9,2,8);
+INSERT INTO ClothingBoutique VALUES(8,"Purple Tanktop",12 ,20 ,12 ,4 ,10);
+INSERT INTO ClothingBoutique VALUES(9,"Grey Cardigan",28 ,4 ,2 ,1 ,6);
+INSERT INTO ClothingBoutique VALUES(10,"Headbands",10 ,16 ,8 ,2 ,6);
+INSERT INTO ClothingBoutique VALUES(11,"Baby Doll Tee",11 ,17 ,13 ,4 ,10);
+INSERT INTO ClothingBoutique VALUES(12, "Socks",6 ,20 ,18 ,4 ,6);
+INSERT INTO ClothingBoutique VALUES(13,"Maxi Dress",30 ,6 ,2 ,2 ,6);
+INSERT INTO ClothingBoutique VALUES(14,"Button Up Top",24 ,5 ,2 ,2 ,4);
+INSERT INTO ClothingBoutique VALUES(15,"Beanie",15 ,3 ,4 ,1 ,5);
+
+
+SELECT * FROM ClothingBoutique ORDER BY price;
+
+SELECT SUM(in_stock) FROM ClothingBoutique;
+SELECT AVG(price) FROM ClothingBoutique;
+
+SELECT * FROM ClothingBoutique WHERE rating >8 ORDER BY price;
